@@ -1,9 +1,14 @@
 @use "../../styles/cv-variables";
 
+.cvWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .cvContainer {
   max-width: 21cm;
   height: 29.7cm;
-  margin: 20px auto;
+  margin: 0 auto;
   background: cv-variables.$cv-color-background;
   display: flex;
   overflow: hidden;
@@ -17,12 +22,11 @@
   padding: 30px 25px;
 }
 
-.sidebar > * {
-  position: relative;
-  z-index: 2;
-}
-
 .mainContent {
   width: 65%;
   padding: 30px 35px;
+}
+
+.printButton {
+  margin: 10px auto;
 }

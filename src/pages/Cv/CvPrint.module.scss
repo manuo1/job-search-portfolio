@@ -1,0 +1,158 @@
+@use "../../styles/cv-variables";
+
+@media print {
+  // Hide navbar
+  :global(header),
+  :global(.header),
+  :global(nav),
+  :global(.navbar),
+  :global(.navigation) {
+    display: none !important;
+  }
+
+  @page {
+    size: A4;
+    margin: 1cm 0 0 0.4cm;
+  }
+
+  .cvContainer {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    background: cv-variables.$cv-color-background !important;
+    min-height: 100vh !important;
+    height: auto !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .sidebar {
+    width: 35% !important;
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    background: cv-variables.$cv-color-sidebar-background !important;
+    color: cv-variables.$cv-color-text-inverse !important;
+    padding: 25px 20px !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+
+    > * {
+      color: cv-variables.$cv-color-text-inverse !important;
+    }
+  }
+
+  .mainContent {
+    width: 65% !important;
+    padding: 25px 30px !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  :global(*) {
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  :global(.print-hide) {
+    display: none !important;
+  }
+
+  :global(body) {
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+    color: #333 !important;
+    background: white !important;
+  }
+
+  :global(h1),
+  :global(h2),
+  :global(h3),
+  :global(h4),
+  :global(h5),
+  :global(h6) {
+    margin-top: 0 !important;
+    margin-bottom: 8px !important;
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  :global(p),
+  :global(li) {
+    margin-bottom: 4px !important;
+    line-height: 1.3 !important;
+  }
+
+  :global(ul),
+  :global(ol) {
+    margin-bottom: 10px !important;
+    padding-left: 15px !important;
+  }
+
+  :global(.experience-item),
+  :global(.formation-item),
+  :global(.skills-section),
+  :global(.contact-section),
+  :global(.profile-section) {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin-bottom: 12px !important;
+  }
+
+  :global(.highlight),
+  :global(.skill-tag),
+  :global(.section-title) {
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  :global(.skill-tag) {
+    font-size: 10px !important;
+    padding: 2px 6px !important;
+    margin: 2px !important;
+  }
+  :global(a) {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+
+  :global(*) {
+    max-width: 100% !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+  }
+
+  :global(img) {
+    max-width: 100% !important;
+    height: auto !important;
+    page-break-inside: avoid;
+  }
+}
+
+// === ATS Keywords (only for print version) ===
+.atsKeywords {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  font-size: 0;
+
+  @media print {
+    position: static;
+    left: auto;
+    top: auto;
+    overflow: hidden;
+
+    color: white;
+    font-size: 1px;
+    line-height: 1;
+
+    // ATS Keywords
+    &::after {
+      content: "Python, Django, Django REST Framework, Flask, JavaScript, TypeScript, React, ReactJS, Redux, Zustand, Vite, Tailwind, HTML5, CSS3, Sass, Bootstrap, Node.js, Express, GraphQL, Next.js, Nuxt.js, Vue.js, Angular, Webpack, Babel, Parcel, Jest, Mocha, Chai, Cypress, Playwright, PostgreSQL, MySQL, SQLite, MongoDB, Redis, Oracle, MariaDB, Firebase, DynamoDB, Elasticsearch, Kafka, RabbitMQ, MQTT, Git, GitHub Actions, GitLab CI, Docker, Docker Compose, Kubernetes, Terraform, Ansible, CI/CD, Jenkins, Travis CI, Sentry, Datadog, Flower, Celery, Black, Ruff, Pytest, Unittest, ESLint, Bluetooth, Enedis API, GRDF API, Teleinformation, REST API, WebSocket, API Integration, Data Processing, Real-time Dashboard, Backend Developer, Frontend Developer, Full Stack Developer, Software Engineer, Full Stack Engineer, Technical Lead, Team Lead, Lead Developer, Junior, Mid-Level, Senior, Junior Python, Junior React, Senior Full Stack, Backend Senior, Frontend Senior, Full Stack Python, Full Stack React, +5 years experience, Agile, Scrum, Kanban, Waterfall, Lean, Code Review, Pair Programming, Jira, Trello, Confluence, Leadership, Communication, Teamwork, Problem-solving, Autonomy, Adaptabilité, Proactive, Initiative, Mentoring, Coaching, Vision produit, Gestion de projet, Force de proposition, French, English, Bilingual, TOEIC, IELTS, RNCP niveau 5, RNCP niveau 6, RNCP niveau 7, Bachelor, Master, Bootcamp, Professional Training, Certification, Scrum Master, AWS Certified, Docker Certified";
+    }
+  }
+}

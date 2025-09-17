@@ -1,0 +1,26 @@
+@use "../../styles/cv-variables";
+
+.printButton {
+  background-color: cv-variables.$cv-print-button;
+  color: cv-variables.$cv-color-text-inverse;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background-color: cv-variables.$cv-print-button-hover;
+  }
+}
+
+.print-hide {
+  display: inline-block;
+}
+
+@media print {
+  .print-hide {
+    display: none !important;
+  }
+}
