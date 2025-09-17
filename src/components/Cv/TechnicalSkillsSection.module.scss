@@ -1,0 +1,26 @@
+@use "../../styles/cv-mixins";
+@use "../../styles/cv-variables";
+
+.technicalSkillsContainer {
+  margin-bottom: 20px;
+}
+
+.sectionTitle {
+  @include cv-mixins.section-title-sidebar;
+}
+
+.skillsCategory {
+  margin-bottom: 10px;
+}
+
+.skillsCategoryTitle {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.skillsList {
+  font-size: 13px;
+  line-height: 1.4;
+  color: cv-variables.$cv-color-text-inverse;
+  padding-left: 5px;
+}

@@ -1,0 +1,28 @@
+@use "../../styles/cv-variables";
+
+.cvContainer {
+  max-width: 21cm;
+  height: 29.7cm;
+  margin: 20px auto;
+  background: cv-variables.$cv-color-background;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+  width: 35%;
+  background: cv-variables.$cv-color-sidebar-background;
+  color: cv-variables.$cv-color-text-inverse;
+  padding: 30px 25px;
+}
+
+.sidebar > * {
+  position: relative;
+  z-index: 2;
+}
+
+.mainContent {
+  width: 65%;
+  padding: 30px 35px;
+}

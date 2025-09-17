@@ -1,0 +1,14 @@
+@use "../../styles/cv-mixins";
+
+.contactContainer {
+  margin-bottom: 30px;
+}
+
+.sectionTitle {
+  @include cv-mixins.section-title-sidebar;
+}
+
+.contactItem {
+  margin-bottom: 10px;
+  font-size: 13px;
+}

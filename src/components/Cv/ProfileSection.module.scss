@@ -1,0 +1,24 @@
+@use "../../styles/cv-mixins";
+@use "../../styles/cv-variables";
+
+.profileContainer {
+  margin-bottom: 25px;
+
+  .sectionTitle {
+    @include cv-mixins.section-title-main;
+  }
+
+  .profileText {
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: justify;
+    color: cv-variables.$cv-color-text;
+
+    .highlight {
+      background: cv-variables.$cv-gradient-highlight;
+      padding: 2px 4px;
+      border-radius: 3px;
+      font-weight: 500;
+    }
+  }
+}

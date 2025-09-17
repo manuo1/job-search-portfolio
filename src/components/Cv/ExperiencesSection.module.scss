@@ -1,0 +1,51 @@
+@use "../../styles/cv-mixins";
+@use "../../styles/cv-variables";
+
+.experiencesContainer {
+  margin-bottom: 30px;
+}
+
+.sectionTitle {
+  @include cv-mixins.section-title-main;
+}
+
+.experienceItem {
+  margin-bottom: 20px;
+}
+
+.experienceHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.jobTitle {
+  font-weight: 600;
+  font-size: 14px;
+  color: cv-variables.$cv-color-text;
+}
+
+.company {
+  font-weight: 500;
+  font-size: 14px;
+  color: cv-variables.$cv-color-primary;
+}
+
+.date {
+  font-size: 12px;
+  color: cv-variables.$cv-color-text-muted;
+  font-style: italic;
+}
+
+.experienceDescription {
+  font-size: 12px;
+  color: cv-variables.$cv-color-text-muted;
+  line-height: 1.5;
+  padding-left: 18px;
+  margin-top: 4px;
+
+  li {
+    margin-bottom: 4px;
+  }
+}

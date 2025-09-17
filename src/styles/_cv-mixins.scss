@@ -1,0 +1,19 @@
+@use "./cv-variables";
+
+@mixin section-title-main {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: cv-variables.$cv-color-primary;
+  border-bottom: 2px solid cv-variables.$cv-color-primary;
+  padding-bottom: 4px;
+}
+
+@mixin section-title-sidebar {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: cv-variables.$cv-color-text-inverse;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 4px;
+}

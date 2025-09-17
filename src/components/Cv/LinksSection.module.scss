@@ -1,0 +1,27 @@
+@use "../../styles/cv-mixins";
+
+.linksContainer {
+  margin-bottom: 20px;
+}
+
+.sectionTitle {
+  @include cv-mixins.section-title-sidebar;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 13px;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    margin-left: 6px;
+  }
+}
+
+.contactIcon {
+  width: 16px;
+  height: 16px;
+}

@@ -1,0 +1,16 @@
+$cv-color-primary: #667eea;
+$cv-color-secondary: #764ba2;
+
+$cv-color-text: #333;
+$cv-color-text-muted: #666;
+$cv-color-text-light: #999;
+$cv-color-text-inverse: #ffffff;
+
+$cv-color-background: #ffffff;
+$cv-color-sidebar-background: linear-gradient(
+  135deg,
+  $cv-color-primary 0%,
+  $cv-color-secondary 100%
+);
+
+$cv-gradient-highlight: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);

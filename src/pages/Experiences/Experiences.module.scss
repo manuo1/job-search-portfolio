@@ -1,0 +1,17 @@
+@use "../../styles/variables";
+
+.experiencesContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.pageTitle {
+  font-size: 28px;
+  font-weight: 700;
+  color: variables.$color-text;
+  margin-bottom: 30px;
+  text-align: center;
+  border-bottom: 2px solid variables.$color-primary;
+  padding-bottom: 10px;
+}
