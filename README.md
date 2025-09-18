@@ -1,12 +1,69 @@
-# React + Vite
+# Job Search Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio personnel pour mettre en avant mes compétences et expériences, avec un focus sur la recherche d'emploi dans le développement web.
 
-Currently, two official plugins are available:
+## Déploiement en ligne
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Le site est disponible à l’adresse suivante : https://www.emmanuel-oudot.fr
 
-## Expanding the ESLint configuration
+## Fonctionnalités
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Design responsive pour ordinateurs et mobiles
+- CV interactif avec fonctionnalité d’impression en PDF
+- Optimisation des mots-clés pour les ATS
+- Favicon personnalisée
+- Déploiement sur GitHub Pages avec redirection depuis un domaine OVH
+
+## Optimisation pour les ATS
+
+L’impression du CV est gérée via la fonction « print » du navigateur afin de garantir que le contenu soit bien lisible et exploitable par les ATS (Applicant Tracking Systems). Une section de mots-clés non visible par l’utilisateur humain a été intégrée pour inclure des termes techniques et des compétences pertinentes. Cela permet aux ATS d’identifier correctement les qualifications, tout en laissant l’évaluation finale du CV à un lecteur humain.
+
+## Tech Stack
+
+- React
+- React Router
+- Sass
+- Vite
+- GitHub Pages
+
+## Installation
+
+   ```bash
+    git clone https://github.com/manuo1/job-search-portfolio.git
+    cd job-search-portfolio
+    npm install
+   ```
+
+## Développement local
+
+Lancez le projet en mode développement :
+```bash
+npm run dev
+```
+
+## Deployment
+Le projet est configuré pour être déployé sur GitHub Pages avec le package `gh-pages`.
+
+1. Pour déployer :
+   
+   ```bash
+   npm run deploy
+   ```
+
+2. Redirection de domaine :
+   
+   Pour que le site soit accessible via un nom de domaine personnalisé (OVH ici), il faut :
+   - Configurer GitHub Pages dans les paramètres du dépôt pour qu’il serve le site sur une URL donnée.
+   - Mettre à jour la configuration DNS du domaine OVH afin qu’il pointe correctement vers les serveurs de GitHub Pages.
+   - Vérifier que le domaine racine (ex. www.emmanuel-oudot.fr) et le sous-domaine éventuel redirigent bien vers la page d’accueil du portfolio.
+
+## Utilisation
+
+- Consultez le portfolio à l’adresse : https://www.emmanuel-oudot.fr
+- Imprimez mon CV directement depuis le site (prêt à être exporté en PDF)
+- Une page inclut une brève description des projets, de leur contexte, des technologies utilisées et de mon rôle.
+
+## License
+
+Ce projet est à usage strictement personnel.
+Tous droits réservés à Emmanuel Oudot.

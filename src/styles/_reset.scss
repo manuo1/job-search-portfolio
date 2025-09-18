@@ -10,4 +10,5 @@ body {
   font-family: Arial, sans-serif;
   background: variables.$color-background;
   color: variables.$color-text;
+  min-width: 600px;
 }
