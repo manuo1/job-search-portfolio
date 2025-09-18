@@ -1,7 +1,7 @@
 {
   "name": "job-search-portfolio",
   "private": true,
-  "homepage": "https://manuo1.github.io/job-search-portfolio",
+  "homepage": "https://www.emmanuel-oudot.fr",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -11,7 +11,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
-    
+
   },
   "dependencies": {
     "react": "^19.1.1",
