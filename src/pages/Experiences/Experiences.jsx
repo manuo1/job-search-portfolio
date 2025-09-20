@@ -1,3 +1,4 @@
+// src/pages/Experiences/Experiences.jsx
 import React, { useState, useEffect } from "react";
 import Udwi from "../../components/Udwi/Udwi";
 import Housebrain from "../../components/Housebrain/Housebrain";
@@ -11,7 +12,7 @@ export default function Experiences() {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       setShowScrollTop(scrollY > 300);
-      setShowStickyNav(scrollY > 400);
+      setShowStickyNav(scrollY > 400); // Affiche la nav après la nav principale
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -36,14 +37,17 @@ export default function Experiences() {
           </a>
           <a href="#udwi" className={styles.navLink}>
             <div className={styles.navCard}>
-              <h3>UDWI</h3>
-              <p>[Description courte]</p>
-              <span className={styles.tech}>[Technologies]</span>
+              <h3>UDWI - EcoCO2</h3>
+              <p>Plateforme IoT transition énergétique</p>
+              <span className={styles.tech}>
+                Django • PostgreSQL • APIs • IoT
+              </span>
             </div>
           </a>
         </nav>
       </header>
 
+      {/* Navigation sticky - apparait seulement quand on scroll */}
       {showStickyNav && (
         <div className={styles.stickyNav}>
           <a href="#housebrain" className={styles.stickyLink}>
@@ -66,6 +70,7 @@ export default function Experiences() {
         <Udwi />
       </section>
 
+      {/* Bouton scroll to top flottant */}
       {showScrollTop && (
         <button
           onClick={scrollToTop}
