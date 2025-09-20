@@ -23,7 +23,7 @@ function Header() {
               <NavLink
                 to="/experiences"
                 className={({ isActive }) =>
-                  isActive ? styles.active : undefined
+                  `${isActive ? styles.active : ""} ${styles.highlight}`
                 }
               >
                 Projets & Expériences

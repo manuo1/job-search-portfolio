@@ -53,3 +53,45 @@ a {
     border-radius: 2px;
   }
 }
+
+.highlight {
+  position: relative;
+  display: inline-block;
+  color: variables.$color-text-inverse;
+  font-weight: 500;
+  background: linear-gradient(
+    120deg,
+    variables.$color-primary 0%,
+    variables.$color-primary 50%,
+    variables.$color-text-inverse 50%,
+    variables.$color-text-inverse 100%
+  );
+  background-size: 220% 100%;
+  background-position: 100% 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: textSweep 1.2s ease-in-out 2, zoomPulse 1.2s ease-in-out 2;
+}
+
+@keyframes textSweep {
+  0% {
+    background-position: 100% 0;
+  }
+  50% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes zoomPulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
