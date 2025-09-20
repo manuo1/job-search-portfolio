@@ -45,7 +45,7 @@ function Housebrain() {
             <h3>Architecture full-stack</h3>
             <ul>
               <li>
-                <strong>Backend Django</strong> : 6 apps modulaires, services
+                <strong>Backend Django</strong> : Apps modulaires, services
                 systemd autonomes, API REST
               </li>
               <li>
@@ -71,7 +71,7 @@ function Housebrain() {
             <ul>
               <li>
                 <strong>Interface série</strong> : Carte électronique custom
-                (SFH620A), parser Teleinfo 1200 bauds
+                (SFH620A), parser serie Teleinfo
               </li>
               <li>
                 <strong>Bluetooth LE</strong> : Capteurs &lt;2€ reflashés
@@ -79,7 +79,7 @@ function Housebrain() {
               </li>
               <li>
                 <strong>Pilotage chauffages</strong> : Circuit MCP23017 +
-                MOC3041 pour commande relais
+                MOC3041 pour commande fils pilotes
               </li>
               <li>
                 <strong>Raspberry Pi</strong> : Optimisation embarquée,
@@ -95,16 +95,16 @@ function Housebrain() {
             <h3>Algorithmes & traitement données</h3>
             <ul>
               <li>
-                <strong>Temps-réel</strong> : 1440 points/jour, interpolation
+                <strong>Temps-réel</strong> : 1 point par minute, interpolation
                 linéaire pour gaps
               </li>
               <li>
-                <strong>Multi-résolution</strong> : Agrégation minute → heure,
-                downsampling intelligent
+                <strong>Multi-résolution</strong> : Agrégation minute →
+                demi-heure → heure, downsampling intelligent
               </li>
               <li>
-                <strong>Tarification EDF</strong> : 11 index, calcul coûts
-                automatique
+                <strong>Tarification EDF</strong> : Compatible tout index,
+                calcul coûts automatique
               </li>
             </ul>
             <p className={styles.skill}>
@@ -116,7 +116,7 @@ function Housebrain() {
             <h3>DevOps & production</h3>
             <ul>
               <li>
-                <strong>Déploiement</strong> : 14 scripts orchestrés, health
+                <strong>Déploiement</strong> : Scripts orchestrés, health
                 checks, rollback auto
               </li>
               <li>

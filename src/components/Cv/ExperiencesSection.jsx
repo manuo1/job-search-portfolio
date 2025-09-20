@@ -29,25 +29,30 @@ const experiences = [
     date: "Nov. 2024 - Présent",
     points: [
       <>
-        Solution domotique complète de{" "}
-        <strong>suivi de consommation électrique</strong> et pilotage de
-        chauffages
+        Système domotique autonome avec{" "}
+        <strong>
+          monitoring énergétique temps-réel et pilotage chauffages
+        </strong>
       </>,
       <>
-        Backend : <strong>API REST Django</strong> avec gestion temps réel des
-        données capteurs
+        <strong>Backend Django</strong> : apps modulaires, services systemd,
+        cache Redis partagé, API REST
       </>,
       <>
-        Frontend : <strong>Interface React responsive</strong> avec graphiques
-        interactifs
+        <strong>Frontend React</strong> : SPA avec visualisation Recharts,
+        dashboard responsive, navigation intelligente
       </>,
       <>
-        Intégration capteurs Bluetooth, lecture <strong>compteur Linky</strong>{" "}
-        via téléinformation
+        <strong>Hardware</strong> : Cartes électroniques custom (SFH620A,
+        MCP23017), capteurs Bluetooth reflashés
       </>,
       <>
-        Conception de <strong>cartes électroniques sur mesure</strong> pour
-        pilotage d'équipements
+        <strong>Protocoles IoT</strong> : Interface série Teleinfo, décodage
+        BTHome, algorithmes interpolation
+      </>,
+      <>
+        <strong>DevOps</strong> : Déploiement automatisé par scripts, monitoring
+        systemd, architecture microservices
       </>,
     ],
   },
