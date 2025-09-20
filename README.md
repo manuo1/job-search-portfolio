@@ -13,6 +13,7 @@ Le site est disponible à l’adresse suivante : https://www.emmanuel-oudot.fr
 - Optimisation des mots-clés pour les ATS
 - Favicon personnalisée
 - Déploiement sur GitHub Pages avec redirection depuis un domaine OVH
+- **Nouvelle section “Projets & Expériences”** : description plus détaillée des expériences professionnelles présentes dans le CV, avec technologies et responsabilités mises en avant
 
 ## Optimisation pour les ATS
 
@@ -61,7 +62,7 @@ Le projet est configuré pour être déployé sur GitHub Pages avec le package `
 
 - Consultez le portfolio à l’adresse : https://www.emmanuel-oudot.fr
 - Imprimez mon CV directement depuis le site (prêt à être exporté en PDF)
-- Une page inclut une brève description des projets, de leur contexte, des technologies utilisées et de mon rôle.
+- La section Projets & Expériences permet d’explorer plus en détail les expériences professionnelles du CV, avec un focus sur les responsabilités et technologies utilisées.
 
 ## License
 
