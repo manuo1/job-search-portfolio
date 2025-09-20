@@ -49,3 +49,20 @@
     margin-bottom: 4px;
   }
 }
+
+.moreDetails {
+  margin-top: 10px;
+  font-size: 11px;
+  color: cv-variables.$cv-color-text-muted;
+  font-style: italic;
+  text-align: right;
+
+  a {
+    color: cv-variables.$cv-color-primary;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

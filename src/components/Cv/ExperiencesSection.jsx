@@ -79,6 +79,17 @@ export default function ExperiencesSection() {
           </ul>
         </div>
       ))}
+
+      <div className={styles.moreDetails}>
+        Détails complets disponibles sur mon portfolio&nbsp;
+        <a
+          href="https://www.emmanuel-oudot.fr"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          www.emmanuel-oudot.fr
+        </a>
+      </div>
     </div>
   );
 }
