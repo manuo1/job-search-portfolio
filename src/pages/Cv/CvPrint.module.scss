@@ -152,7 +152,8 @@
     line-height: 1;
 
     &::after {
-      content: "Ingénieur logiciel niveau Bac+5 par l'expérience Software Engineer Backend Engineer Full-Stack Engineer Python Senior Developer Django Expert React JavaScript REST API Microservices IoT Data Processing PostgreSQL Redis Docker CI/CD Tech Lead Agile";
+      content: "Informations complémentaires : Je n'ai pas de diplôme Bac+5, mais mon expérience en développement logiciel couvre l'ensemble du cycle de vie des applications back-end et front-end. J'ai conçu et développé des systèmes complexes en Python et Django, créé des interfaces réactives avec React et JavaScript, optimisé la performance et la scalabilité des services, géré la persistance des données sur PostgreSQL et Redis, automatisé les tâches avec Celery, mis en place des pipelines CI/CD, supervisé le monitoring et la fiabilité des applications en production, et collaboré avec des équipes Agile multidisciplinaires. Mon parcours m'a permis de maîtriser la conception d'API REST, l'intégration IoT, la gestion de microservices, le déploiement Docker et la supervision via Sentry et Datadog, tout en respectant les bonnes pratiques de développement, les tests automatisés et l'architecture orientée performance et résilience.";
+      font-weight: bold;
     }
   }
 }
