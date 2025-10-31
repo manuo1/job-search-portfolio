@@ -8,6 +8,7 @@ import SoftSkillsSection from "../../components/Cv/SoftSkillsSection";
 import CvHeader from "../../components/Cv/CvHeader";
 import ProfileSection from "../../components/Cv/ProfileSection";
 import CareerTimelineSection from "../../components/Cv/CareerTimelineSection";
+import LinksSection from "../../components/Cv/LinksSection";
 
 import styles from "./Cv.module.scss";
 import printStyles from "./CvPrint.module.scss";
@@ -53,6 +54,7 @@ export default function Cv() {
         <div className={`${styles.sidebar} ${printStyles.sidebar}`}>
           <ProfilePhoto />
           <ContactSection />
+          <LinksSection />
           <Languages />
           <TechnicalSkillsSection />
           <SoftSkillsSection />
