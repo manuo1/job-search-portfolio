@@ -4,18 +4,23 @@ import styles from "./ProfileSection.module.scss";
 export default function ProfileSection() {
   return (
     <section className={styles.profileContainer}>
-      <h2 className={styles.sectionTitle}>PROFIL</h2>
       <p className={styles.profileText}>
-        Développeur full-stack passionné avec{" "}
-        <span className={styles.highlight}>3 ans d'expérience pro</span> en
-        Python/Django, récemment spécialisé en React. Reconverti après une
-        première carrière d'opticien, j'apporte une vision business unique et
-        des compétences solides en{" "}
-        <span className={styles.highlight}>gestion de données</span> et ,
-        <span className={styles.highlight}>IoT</span> et{" "}
-        <span className={styles.highlight}>optimisation de performances</span>.
-        Habitué au travail en équipe transverse et force de proposition
-        technique.
+        <strong>Développeur Full-Stack</strong> passionné, spécialisé en{" "}
+        <strong>Python, Django</strong> et <strong>React</strong>. Issu d'une
+        première carrière dans l'optique, j'apporte une approche{" "}
+        <strong>centrée utilisateur</strong> et une solide compréhension des{" "}
+        <strong>besoins métiers</strong>.
+      </p>
+
+      <p className={styles.profileText}>
+        Je conçois des applications <strong>performantes</strong>,{" "}
+        <strong>fiables</strong> et <strong>scalables</strong> dans des
+        environnements <strong>techniques exigeants</strong>. Mon expertise
+        couvre la <strong>gestion de données</strong>, l'<strong>IoT</strong>,
+        l'<strong>optimisation backend</strong> et les{" "}
+        <strong>architectures robustes</strong>. J'accorde une grande importance
+        à la <strong>clarté</strong>, à l'<strong>efficacité</strong> et à la{" "}
+        <strong>collaboration</strong> entre développeurs, produit et métiers.
       </p>
     </section>
   );

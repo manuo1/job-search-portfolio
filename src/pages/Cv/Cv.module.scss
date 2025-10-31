@@ -1,32 +1,51 @@
-@use "../../styles/cv-variables";
+@use "../../styles/cv-variables" as vars;
 
 .cvWrapper {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 .cvContainer {
   max-width: 21cm;
-  height: 29.7cm;
-  margin: 0 auto;
-  background: cv-variables.$cv-color-background;
+  min-height: 29.7cm; // min-height au lieu de height !
+  margin: 20px auto;
+  background: vars.$cv-color-background;
   display: flex;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+  @media print {
+    margin: 0 !important;
+    min-height: auto !important;
+    box-shadow: none !important;
+  }
 }
 
 .sidebar {
   width: 35%;
-  background: cv-variables.$cv-color-sidebar-background;
-  color: cv-variables.$cv-color-text-inverse;
+  background: vars.$cv-color-sidebar-background;
+  color: vars.$cv-color-text-inverse;
   padding: 30px 25px;
+
+  @media print {
+    padding: 20px 15px !important;
+  }
 }
 
 .mainContent {
   width: 65%;
-  padding: 30px 35px;
+  padding: 25px 30px;
+
+  @media print {
+    padding: 20px 20px 20px 25px !important;
+  }
 }
 
 .printButton {
   margin: 10px auto;
+
+  @media print {
+    display: none !important;
+  }
 }

@@ -12,3 +12,20 @@
   margin-bottom: 10px;
   font-size: 13px;
 }
+.linkItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 13px;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    margin-left: 6px;
+  }
+}
+
+.linkIcon {
+  width: 16px;
+  height: 16px;
+}

@@ -12,7 +12,8 @@
 
   @page {
     size: A4;
-    margin: 1cm 0 0 0.4cm;
+    margin: 0.4cm;
+    margin-right: 0;
   }
 
   .cvContainer {
@@ -46,7 +47,7 @@
 
   .mainContent {
     width: 65% !important;
-    padding: 25px 30px !important;
+    padding: 25px 25px !important;
     page-break-inside: avoid;
     break-inside: avoid;
   }
@@ -150,9 +151,8 @@
     font-size: 1px;
     line-height: 1;
 
-    // ATS Keywords
     &::after {
-      content: "Python, Django, Django REST Framework, Flask, JavaScript, TypeScript, React, ReactJS, Redux, Zustand, Vite, Tailwind, HTML5, CSS3, Sass, Bootstrap, Node.js, Express, GraphQL, Next.js, Nuxt.js, Vue.js, Angular, Webpack, Babel, Parcel, Jest, Mocha, Chai, Cypress, Playwright, PostgreSQL, MySQL, SQLite, MongoDB, Redis, Oracle, MariaDB, Firebase, DynamoDB, Elasticsearch, Kafka, RabbitMQ, MQTT, Git, GitHub Actions, GitLab CI, Docker, Docker Compose, Kubernetes, Terraform, Ansible, CI/CD, Jenkins, Travis CI, Sentry, Datadog, Flower, Celery, Black, Ruff, Pytest, Unittest, ESLint, Bluetooth, Enedis API, GRDF API, Teleinformation, REST API, WebSocket, API Integration, Data Processing, Real-time Dashboard, Backend Developer, Frontend Developer, Full Stack Developer, Software Engineer, Full Stack Engineer, Technical Lead, Team Lead, Lead Developer, Junior, Mid-Level, Senior, Junior Python, Junior React, Senior Full Stack, Backend Senior, Frontend Senior, Full Stack Python, Full Stack React, +5 years experience, Agile, Scrum, Kanban, Waterfall, Lean, Code Review, Pair Programming, Jira, Trello, Confluence, Leadership, Communication, Teamwork, Problem-solving, Autonomy, Adaptabilité, Proactive, Initiative, Mentoring, Coaching, Vision produit, Gestion de projet, Force de proposition, French, English, Bilingual, TOEIC, IELTS, RNCP niveau 5, RNCP niveau 6, RNCP niveau 7, Bachelor, Master, Bootcamp, Professional Training, Certification, Scrum Master, AWS Certified, Docker Certified, Domotique, Home Automation, Raspberry Pi, Système domotique, Smart Home, IoT, Internet des Objets, MQTT, Bluetooth Low Energy, Téléinfo, SFH620A, MCP23017, MOC3041, Protocoles Série, Serial Parser, Firmware sur mesure, BTHome, Capteur Bluetooth, Optimisation embarquée, Systemd, Nginx, Gunicorn, Microservices, Cache distribué, Redis, Django, API REST, PySerial, Bleak, React, SPA, Recharts, Responsive Design, Tableau de bord, Visualisation temps réel, Interpolation linéaire, Downsampling, Index EDF, Tarification automatique, Visualisation énergétique, Suivi de consommation, Monitoring de dispositifs, Circuit électronique, Gestion énergétique, Data Aggregation, Matériel connecté, Gestion de l'énergie, Architecture découplée, Microservice Architecture, Intégration Hardware, Plateforme IoT, Transition énergétique, API GRDF, API EDF, Intégration API, Gestion multi-fuseaux horaires, Gestion des Timezones, Optimisation SQL, ORM Django performant, Haute performance, Analyse des données, Algorithmes R&D, Détection surconsommation, Agrégation asynchrone, Data volumineuse, Celery optimisation, Alternative Pandas, DevOps, Déploiement automatisé, Rollback, Monitoring production, Systemd Watchdog, Logs structurés, Datadog, Gatus, Locust, Pytest, Tests non régressif, QA, Documentation technique, REST API, HTTP, TCP, LoRaWAN, Sécurisation données, Gestion des pics de trafic, Scalabilité industrielle, Multi-source IoT, Technologies de capteurs, Sécurité des données, Lead technique, Coordinateur d'équipe, Méthodologie agile, Jira planning, Rétrospective, Communication transverse, Collaboration, Coordination, Résolution de problèmes, Initiative, Vision produit digital, Solution Architect, Embedded Systems, Technical Reference, Test automation, Sécurité API, Monitoring infrastructure, Production Ready, Fault Tolerance, Cloud Infrastructure, Bilingue (Français/Anglais), Documentation technique, Chef de projet domotique, IoT Developer, Smart Home Architect, Embedded Systems Engineer, Lead IoT Engineer, Full Stack DOMOTIQUE, Maison intelligente, Automatisation, Analyse énergétique, Système embarqué, Développement logiciel, Ingénieur informatique, Ingénieur logiciel, Ingénieur système, Administrateur infrastructure, Sécurité informatique, RGPD, Pentesting, IAM, Hacking éthique, Low-code, No-code, Bubble, Webflow, Zapier, RPA, Big Data, BI, ETL, ELT, Hadoop, Spark, Tableau, Power BI, Blockchain, Crypto, NFT, Smart Contracts, Web3, Solidity, Open Source, Gitflow, Maintainer, OSS Community, Product Management, Product Owner, PO, UX, UI, Design Thinking, Outils collaboratifs, Miro, Figma, Notion, Slack, Monday, Teams, Bureautique, Office 365, Google Workspace, Excel avancé, Tableaux croisés dynamiques, Solution Architect, Lead Engineer, Cloud Architect, Data Engineer, Data Analyst, CISO, CTO, Project Manager, PMO, Smart Devices, Appareils intelligents, Capteurs connectés, Thermostat intelligent, Serrures connectées, Eclairage intelligent, Automatisation maison, Protocoles IoT, Maillage (Mesh), Thread, Zigbee, Z-Wave, Matter, Wi-Fi 6, Sécurité réseau, Identité numérique, Sécurité IoT, Edge computing, Reconnaissance faciale, Reconnaissance vocale, Interopérabilité, Plateforme de gestion, Application mobile, Application web, Routine, Scène, Programme horaire, Intelligence artificielle, Machine Learning, Deep Learning, Data Science, Prompt Engineering, LLM, ChatGPT, Claude, Midjourney";
+      content: "Ingénieur logiciel niveau Bac+5 par l'expérience Software Engineer Backend Engineer Full-Stack Engineer Python Senior Developer Django Expert React JavaScript REST API Microservices IoT Data Processing PostgreSQL Redis Docker CI/CD Tech Lead Agile";
     }
   }
 }

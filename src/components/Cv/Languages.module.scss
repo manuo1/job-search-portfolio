@@ -1,6 +1,6 @@
 @use "../../styles/cv-mixins";
 
-.contactContainer {
+.languagesContainer {
   margin-bottom: 30px;
 }
 
@@ -8,7 +8,7 @@
   @include cv-mixins.section-title-sidebar;
 }
 
-.contactItem {
+.languagesItem {
   margin-bottom: 10px;
   font-size: 13px;
 }

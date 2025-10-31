@@ -1,15 +1,13 @@
 import React, { useEffect } from "react";
 import PrintButton from "../../components/Cv/PrintButton";
 import ProfilePhoto from "../../components/Cv/ProfilePhoto";
-import PersonalInfoSection from "../../components/Cv/PersonalInfoSection";
+import Languages from "../../components/Cv/Languages";
 import ContactSection from "../../components/Cv/ContactSection";
 import TechnicalSkillsSection from "../../components/Cv/TechnicalSkillsSection";
 import SoftSkillsSection from "../../components/Cv/SoftSkillsSection";
-import LinksSection from "../../components/Cv/LinksSection";
-import Header from "../../components/Cv/Header";
+import CvHeader from "../../components/Cv/CvHeader";
 import ProfileSection from "../../components/Cv/ProfileSection";
-import ExperiencesSection from "../../components/Cv/ExperiencesSection";
-import FormationsSection from "../../components/Cv/FormationsSection";
+import CareerTimelineSection from "../../components/Cv/CareerTimelineSection";
 
 import styles from "./Cv.module.scss";
 import printStyles from "./CvPrint.module.scss";
@@ -54,18 +52,16 @@ export default function Cv() {
       <div className={`${styles.cvContainer} ${printStyles.cvContainer}`}>
         <div className={`${styles.sidebar} ${printStyles.sidebar}`}>
           <ProfilePhoto />
-          <PersonalInfoSection />
           <ContactSection />
+          <Languages />
           <TechnicalSkillsSection />
           <SoftSkillsSection />
-          <LinksSection />
         </div>
 
         <div className={`${styles.mainContent} ${printStyles.mainContent}`}>
-          <Header />
+          <CvHeader />
           <ProfileSection />
-          <ExperiencesSection />
-          <FormationsSection />
+          <CareerTimelineSection />
           <div className={printStyles.atsKeywords}></div>
         </div>
       </div>

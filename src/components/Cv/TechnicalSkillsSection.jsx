@@ -5,16 +5,16 @@ const skills = [
   {
     category: "Backend",
     lines: [
-      ["Python", "Django", "Django REST"],
+      ["Python", "Django"],
       ["PostgreSQL", "MySQL", "Redis"],
-      ["Celery", "Ruff", "Black", "Pytest"],
+      ["Celery", "Async tasks", "Pytest"],
     ],
   },
   {
     category: "Frontend",
     lines: [
       ["JavaScript", "React", "Vite"],
-      ["Redux", "Zustand", "Tailwind"],
+      ["Redux", "Zustand", "TailwindCSS"],
       ["HTML5", "CSS3", "Sass"],
     ],
   },
@@ -22,8 +22,8 @@ const skills = [
     category: "DevOps & Outils",
     lines: [
       ["Git", "GitHub Actions", "Docker"],
-      ["Sentry", "Datadog"],
-      ["Locust", "Gatus", "Flower"],
+      ["CI/CD", "Monitoring", "Sentry", "Datadog"],
+      ["Locust", "Gatus"],
     ],
   },
 ];

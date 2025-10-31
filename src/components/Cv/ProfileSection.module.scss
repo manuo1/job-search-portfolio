@@ -1,24 +1,30 @@
-@use "../../styles/cv-mixins";
-@use "../../styles/cv-variables";
+@use "../../styles/cv-mixins" as mixins;
+@use "../../styles/cv-variables" as vars;
 
 .profileContainer {
-  margin-bottom: 25px;
-
-  .sectionTitle {
-    @include cv-mixins.section-title-main;
-  }
+  @include mixins.container-spacing;
+  padding: 0 vars.$cv-spacing-md;
 
   .profileText {
-    font-size: 13px;
-    line-height: 1.5;
+    @include mixins.text-base;
     text-align: justify;
-    color: cv-variables.$cv-color-text;
+    margin-bottom: vars.$cv-spacing-md;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    strong {
+      color: vars.$cv-color-primary;
+      font-weight: 600;
+    }
 
     .highlight {
-      background: cv-variables.$cv-gradient-highlight;
-      padding: 2px 4px;
+      background: vars.$cv-gradient-highlight;
+      padding: 2px 6px;
       border-radius: 3px;
       font-weight: 500;
+      white-space: nowrap;
     }
   }
 }
