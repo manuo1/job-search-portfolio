@@ -12,38 +12,12 @@
 
 .timeline {
   position: relative;
-  padding-left: 24px;
-
-  // Ligne verticale continue
-  &::before {
-    content: "";
-    position: absolute;
-    left: 3px;
-    top: 8px;
-    bottom: 0;
-    width: 2px;
-    background-color: vars.$cv-color-text-light;
-  }
 }
 
 .timelineItem {
   position: relative;
   margin-bottom: vars.$cv-spacing-md;
   padding-left: vars.$cv-spacing-md;
-
-  // Point de la timeline
-  &::before {
-    content: "";
-    position: absolute;
-    left: -5px;
-    top: 1px;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: vars.$cv-color-primary;
-    border: 2px solid vars.$cv-color-background;
-    z-index: 1;
-  }
 
   &:last-child {
     margin-bottom: 0;
@@ -79,13 +53,14 @@
   @include mixins.text-muted;
   font-style: italic;
   margin-top: 2px;
+  padding-left: 10px;
 }
 
 .description {
   @include mixins.text-muted;
   margin-top: vars.$cv-spacing-sm;
   padding-left: vars.$cv-spacing-md;
-  list-style: disc;
+  list-style: None;
 
   li {
     margin-bottom: vars.$cv-spacing-xs;
