@@ -33,7 +33,7 @@
 
 // Texte muted
 @mixin text-muted {
-  font-size: vars.$cv-font-sm;
+  font-size: vars.$cv-font-md;
   color: vars.$cv-color-text-muted;
 }
 

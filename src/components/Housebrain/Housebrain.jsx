@@ -42,7 +42,7 @@ function Housebrain() {
 
         <div className={styles.achievementGrid}>
           <div className={styles.achievementCard}>
-            <h3>Architecture full-stack</h3>
+            <h3>Architecture full stack</h3>
             <ul>
               <li>
                 <strong>Backend Django</strong> : Apps modulaires, services
