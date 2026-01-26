@@ -1,4 +1,3 @@
-// src/components/Udwi/Udwi.jsx
 import React from "react";
 import styles from "./Udwi.module.scss";
 
@@ -6,192 +5,174 @@ function Udwi() {
   return (
     <div className={styles.udwi}>
       <header className={styles.header}>
-        <h1>UDWI - EcoCO2</h1>
+        <div className={styles.badge}>Projet UDWI • Transition Énergétique</div>
+        <h1>Développeur Backend & Référent d'Équipe</h1>
         <p className={styles.subtitle}>
-          Plateforme IoT pour la transition énergétique
+          EcoCO2 | Janvier 2022 — Novembre 2024 (3 ans)
         </p>
-        <div className={styles.period}>
-          Janvier 2022 - Novembre 2024 (3 ans)
+        <div className={styles.context}>
+          Plateforme IoT (France & DOM-TOM) pour la collecte et l'analyse
+          massive de données énergétiques.
         </div>
       </header>
 
-      <section className={styles.intro}>
-        <p>
-          Plateforme IoT pour la transition énergétique avec collecte et analyse
-          de données de consommation énergétique. Utilisateurs France et DOM-TOM
-          (gestion multi-fuseaux horaires).
-        </p>
-      </section>
-
-      <section className={styles.achievements}>
-        <h2>Réalisations techniques principales</h2>
-
-        <div className={styles.achievementGrid}>
-          <div className={styles.achievementCard}>
-            <h3>Intégrations API métier</h3>
-            <ul>
-              <li>
-                <strong>GRDF</strong> : Conception complète du flux de création
-                et gestion des autorisations, tâches quotidiennes
-              </li>
-              <li>
-                <strong>EDF</strong> : Refonte du flux de récupération des
-                données
-              </li>
-              <li>
-                <strong>Fournisseurs capteurs</strong> : Optimisation de la
-                logique de récupération via APIs
-              </li>
-            </ul>
-            <p className={styles.skill}>
-              → Expertise intégrations métier, APIs énergétiques
-            </p>
+      <section className={styles.engineeringGrid}>
+        {/* APIs & Intégrations Métier */}
+        <div className={styles.card}>
+          <div className={styles.cardHeader}>
+            <h2>APIs Enedis, GRDF & IoT</h2>
           </div>
-
-          <div className={styles.achievementCard}>
-            <h3>Traitement de données à grande échelle</h3>
+          <div className={styles.content}>
             <ul>
               <li>
-                <strong>Requêtes SQL complexes</strong> : ORM Django optimisées
-                sur volumes importants
+                <strong>Flux GRDF :</strong> Conception intégrale du tunnel de
+                création de compte et des demandes d'autorisation d'accès
+                particulier.
               </li>
               <li>
-                <strong>Calculs complexes</strong> : Exploitation et analyse des
-                données de consommation
+                <strong>Collecte Multi-Source :</strong> Gestion des relevés,
+                stockage et exploitation des données Enedis/GRDF pour analyses.
               </li>
               <li>
-                <strong>Algorithmes R&D</strong> : Intégration détection
-                surconsommations avec contraintes performance
-              </li>
-              <li>
-                <strong>Optimisation stockage</strong> : Rééchantillonnage
-                automatique et agrégations asynchrones
+                <strong>Rétro-Ingénierie :</strong> Analyse et reconstruction
+                des systèmes d'appairage/installation de capteurs
+                LoRaWAN/HTTP/TCP dont la maîtrise avait été perdue.
               </li>
             </ul>
-            <p className={styles.skill}>
-              → Algorithmes spécialisés, performance à grande échelle
-            </p>
           </div>
+        </div>
 
-          <div className={styles.achievementCard}>
-            <h3>Optimisation performances critiques</h3>
-            <ul>
-              <li>
-                <strong>API</strong> : Amélioration conséquente des temps de
-                réponse (certaines requêtes : +2000ms → &lt;500ms)
-              </li>
-              <li>
-                <strong>Celery</strong> : Optimisation tâches périodiques
-              </li>
-              <li>
-                <strong>Architecture</strong> : Reprise à zéro des logiques de
-                récupération
-              </li>
-              <li>
-                <strong>Pandas alternative</strong> : Réécriture pour
-                alternatives plus performantes
-              </li>
-            </ul>
-            <p className={styles.skill}>
-              → Optimisation système, architecture performante
-            </p>
+        {/* Traitement de Données Massives */}
+        <div className={styles.card}>
+          <div className={styles.cardHeader}>
+            <h2>Big Data & Algorithmes</h2>
           </div>
-
-          <div className={styles.achievementCard}>
-            <h3>Qualité & DevOps</h3>
+          <div className={styles.content}>
             <ul>
               <li>
-                <strong>Code reviews</strong> : Systématiques avec bonnes
-                pratiques
+                <strong>Optimisation SQL :</strong> Requêtes complexes sur des
+                bases de millions de lignes via l'ORM Django (analyse via{" "}
+                <strong>Django Silk</strong>).
               </li>
               <li>
-                <strong>QA collaboration</strong> : Tests de non-régression
+                <strong>R&D & Calculs :</strong> Intégration d'algorithmes de
+                détection de surconsommation et génération de courbes sur
+                moyennes glissantes.
               </li>
               <li>
-                <strong>Monitoring</strong> : Datadog, Gatus, tests de charge
-                Locust
-              </li>
-              <li>
-                <strong>Tests</strong> : Généralisation Pytest, documentation
-                schémas
+                <strong>Normalisation :</strong> Rééchantillonnage automatique
+                des données capteurs à l'enregistrement (découpe par minutes
+                entières démarrant à 0 seconde).
               </li>
             </ul>
-            <p className={styles.skill}>
-              → Qualité production, monitoring, automatisation
-            </p>
           </div>
+        </div>
 
-          <div className={styles.achievementCard}>
-            <h3>Capteurs et communication IoT</h3>
-            <ul>
-              <li>
-                <strong>Multi-sources</strong> : APIs EDF/GRDF, fournisseurs
-                capteurs, réception directe
-              </li>
-              <li>
-                <strong>3 technologies capteurs</strong> : Électricité,
-                température, hygrométrie
-              </li>
-              <li>
-                <strong>Sécurisation réception</strong> : Gestion pics trafic,
-                répartition intégrations
-              </li>
-              <li>
-                <strong>Protocoles complexes</strong> : LoRaWAN, conversion
-                HTTP/TCP, POST API
-              </li>
-            </ul>
-            <p className={styles.skill}>
-              → Expertise IoT, protocoles industriels, scalabilité
-            </p>
+        {/* Performances Critiques */}
+        <div className={styles.card}>
+          <div className={styles.cardHeader}>
+            <h2>Optimisation Système</h2>
           </div>
-
-          <div className={styles.achievementCard}>
-            <h3>Responsabilités d'équipe</h3>
+          <div className={styles.content}>
             <ul>
               <li>
-                <strong>Référent technique</strong> : Dès la première année
+                <strong>Latence API :</strong> Réduction des temps de réponse de{" "}
+                <strong>+2s à &lt;500ms</strong> par simplification et
+                optimisation du code.
               </li>
               <li>
-                <strong>Liaison transverse</strong> : Développeurs, PO, R&D
+                <strong>Performance Python :</strong> Réécriture complète des
+                flux utilisant <strong>Pandas</strong> vers des alternatives
+                plus performantes pour réduire la charge CPU/RAM.
               </li>
               <li>
-                <strong>Méthodologie Agile</strong> : Jira, planning poker,
-                rétrospectives
-              </li>
-              <li>
-                <strong>Communication</strong> : Rituels de circulation
-                d'informations inter-équipes
+                <strong>Tâches Celery :</strong> Amélioration des workers
+                asynchrones pour une meilleure efficacité énergétique et
+                matérielle.
               </li>
             </ul>
-            <p className={styles.skill}>
-              → Leadership technique, coordination, méthodologie
+          </div>
+        </div>
+
+        {/* DevOps & Qualité */}
+        <div className={styles.card}>
+          <div className={styles.cardHeader}>
+            <h2>QA & Observabilité</h2>
+          </div>
+          <div className={styles.content}>
+            <ul>
+              <li>
+                <strong>Monitoring :</strong> Tableaux de bord et alertes
+                critiques avec <strong>Datadog</strong> et{" "}
+                <strong>Gatus</strong>.
+              </li>
+              <li>
+                <strong>Tests de Charge :</strong> Simulation de réception de
+                données capteurs via <strong>Locust</strong> (données
+                cohérentes, respect des cryptages).
+              </li>
+              <li>
+                <strong>Industrialisation :</strong> Généralisation de{" "}
+                <strong>Pytest</strong> et documentation technique enrichie par
+                des schémas explicatifs.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Rôle de Référent d'Équipe (Carte Large) */}
+        <div className={`${styles.card} ${styles.wideCard}`}>
+          <div className={styles.cardHeader}>
+            <h2>Référent d'Équipe</h2>
+          </div>
+          <div className={styles.content}>
+            <p className={styles.roleDesc}>
+              Promu dès la 1ère année pour ma vision transverse et ma
+              communication.
             </p>
+            <div className={styles.splitContent}>
+              <ul>
+                <li>
+                  <strong>Coordination :</strong> Pivot central entre
+                  Développeurs, Product Owners (PO) et équipe R&D.
+                </li>
+                <li>
+                  <strong>Agilité :</strong> Organisation et animation des
+                  rétrospectives Scrum et des démonstrations techniques.
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <strong>Philosophie :</strong> "Simplification avant
+                  optimisation" — réduction de la complexité inutile avant
+                  d'entrer en phase de performance.
+                </li>
+                <li>
+                  <strong>Expertise ORM :</strong> Écriture de requêtes
+                  strictement ciblées pour éviter les données inutilisées
+                  (Overfetching).
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className={styles.technologies}>
-        <h2>Technologies & Expertise</h2>
-        <div className={styles.techGrid}>
-          <div className={styles.techCategory}>
-            <h3>Backend</h3>
-            <p>Django, PostgreSQL, Celery, Redis, ORM optimisé</p>
-          </div>
-          <div className={styles.techCategory}>
-            <h3>APIs & Intégrations</h3>
-            <p>EDF, GRDF, Fournisseurs IoT, REST, HTTP/TCP</p>
-          </div>
-          <div className={styles.techCategory}>
-            <h3>IoT & Capteurs</h3>
-            <p>LoRaWAN, 3 technologies capteurs, sécurisation</p>
-          </div>
-          <div className={styles.techCategory}>
-            <h3>DevOps & Monitoring</h3>
-            <p>Datadog, Gatus, Locust, Pytest, Environnement dédié</p>
-          </div>
+      <footer className={styles.footer}>
+        <div className={styles.techStack}>
+          <span>Django</span>
+          <span>PostgreSQL</span>
+          <span>Celery</span>
+          <span>Redis</span>
+          <span>LoRaWAN</span>
+          <span>Datadog</span>
+          <span>Gatus</span>
+          <span>Locust</span>
+          <span>Pytest</span>
+          <span>Django Silk</span>
+          <span>Docker</span>
         </div>
-      </section>
+      </footer>
     </div>
   );
 }
