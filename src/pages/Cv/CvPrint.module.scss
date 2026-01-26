@@ -1,12 +1,13 @@
 @use "../../styles/cv-variables";
 
 @media print {
-  // Hide navbar
   :global(header),
   :global(.header),
   :global(nav),
   :global(.navbar),
-  :global(.navigation) {
+  :global(.navigation),
+  :global(footer),
+  :global(.footer) {
     display: none !important;
   }
 
