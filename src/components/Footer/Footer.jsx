@@ -5,10 +5,12 @@ import styles from "./Footer.module.scss";
 function Footer() {
   const location = useLocation();
 
+  const isCvPage = location.pathname === "/cv" || location.pathname === "/";
+
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        {location.pathname === "/cv" && (
+        {isCvPage && (
           <div className={styles.cta}>
             <p>Envie de voir mes réalisations techniques en détail ?</p>
             <Link to="/experiences" className={styles.btn}>
