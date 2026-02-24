@@ -14,7 +14,7 @@ function Footer() {
           <div className={styles.cta}>
             <p>Envie de voir mes réalisations techniques en détail ?</p>
             <Link to="/experiences" className={styles.btn}>
-              Consulter mes projets d'ingénierie
+              Consulter mes projets
             </Link>
           </div>
         )}

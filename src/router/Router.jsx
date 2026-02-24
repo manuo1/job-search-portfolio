@@ -8,7 +8,7 @@ function Router() {
     <Routes>
       <Route path="/experiences" element={<Experiences />} />
       <Route path="/cv" element={<Cv />} />
-      <Route path="*" element={<Cv />} />
+      <Route path="*" element={<Experiences />} />
     </Routes>
   );
 }

@@ -10,7 +10,6 @@ function App() {
       <main style={{ minHeight: "80vh" }}>
         <Router />
       </main>
-      <Footer />
     </>
   );
 }
