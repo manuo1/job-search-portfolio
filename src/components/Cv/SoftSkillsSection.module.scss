@@ -1,9 +1,5 @@
 @use "../../styles/cv-mixins";
 
-.softSkillsContainer {
-  margin-bottom: 20px;
-}
-
 .sectionTitle {
   @include cv-mixins.section-title-sidebar;
 }

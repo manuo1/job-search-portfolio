@@ -19,6 +19,10 @@
   margin-bottom: vars.$cv-spacing-md;
   padding-left: vars.$cv-spacing-md;
 
+  @media print {
+    margin-bottom: 8px !important;
+  }
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -79,6 +83,12 @@
   font-size: vars.$cv-font-sm;
   color: vars.$cv-color-text-muted;
   text-align: center;
+
+  @media print {
+    margin-top: 0 !important;
+    padding-top: 5px !important;
+    font-size: 11px !important;
+  }
 
   a {
     color: vars.$cv-color-primary;

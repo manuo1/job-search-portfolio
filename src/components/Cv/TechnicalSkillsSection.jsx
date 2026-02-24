@@ -5,9 +5,17 @@ const skills = [
   {
     category: "Backend",
     lines: [
-      ["Python", "Django"],
-      ["PostgreSQL", "MySQL", "Redis"],
-      ["Celery", "Async tasks", "Pytest"],
+      ["Python", "Django", "DRF"],
+      ["PostgreSQL", "MySQL", "Redis (IPC/Cache)"],
+      ["Celery", "Async tasks", "Pytest", "Silk"],
+    ],
+  },
+  {
+    category: "Architecture & DevOps",
+    lines: [
+      ["Event-Driven", "Microservices", "TDD"],
+      ["Docker", "CI/CD", "Monitoring", "Datadog"],
+      ["Nginx", "SSL/TLS", "Linux", "Bash"],
     ],
   },
   {
@@ -15,15 +23,7 @@ const skills = [
     lines: [
       ["JavaScript", "React", "Vite"],
       ["Redux", "Zustand", "TailwindCSS"],
-      ["HTML5", "CSS3", "Sass"],
-    ],
-  },
-  {
-    category: "DevOps & Outils",
-    lines: [
-      ["Git", "GitHub Actions", "Docker"],
-      ["CI/CD", "Monitoring", "Sentry", "Datadog"],
-      ["Locust", "Gatus"],
+      ["HTML5", "CSS3", "Sass", "UX/UI"],
     ],
   },
 ];

@@ -2,13 +2,14 @@ import React from "react";
 import styles from "./SoftSkillsSection.module.scss";
 
 const softSkills = [
-  "Communication claire",
-  "Travail en équipe",
-  "Autonomie et rigueur",
+  "Communication inter-services",
+  "Leadership technique",
   "Adaptabilité",
-  "Curiosité technique",
   "Esprit d'analyse",
   "Orientation produit",
+  "Curiosité technique",
+  "Médiation & Facilitation",
+  "Résolution de problèmes",
 ];
 
 export default function SoftSkillsSection() {

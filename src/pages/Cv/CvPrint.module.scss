@@ -11,6 +11,14 @@
     display: none !important;
   }
 
+  html,
+  body {
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+
   @page {
     size: A4;
     margin: 0.4cm;
@@ -31,26 +39,31 @@
   }
 
   .sidebar {
-    width: 35% !important;
-    -webkit-print-color-adjust: exact !important;
-    color-adjust: exact !important;
-    print-color-adjust: exact !important;
-    background: cv-variables.$cv-color-sidebar-background !important;
-    color: cv-variables.$cv-color-text-inverse !important;
-    padding: 25px 20px !important;
-    page-break-inside: avoid;
-    break-inside: avoid;
+    width: 35%;
+    background: cv-variables.$cv-color-sidebar-background;
+    color: cv-variables.$cv-color-text-inverse;
+    padding: 30px 25px;
 
-    > * {
-      color: cv-variables.$cv-color-text-inverse !important;
+    @media print {
+      padding: 15px 12px !important;
+      width: 32% !important;
+    }
+  }
+
+  .sidebar > div {
+    @media print {
+      margin-bottom: 15px !important;
     }
   }
 
   .mainContent {
-    width: 65% !important;
-    padding: 25px 25px !important;
-    page-break-inside: avoid;
-    break-inside: avoid;
+    width: 65%;
+    padding: 25px 30px;
+
+    @media print {
+      padding: 15px 20px !important;
+      width: 68% !important;
+    }
   }
 
   :global(*) {
