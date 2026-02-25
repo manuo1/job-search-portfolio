@@ -1,40 +1,40 @@
-// Couleurs principales
+// COULEURS
 $cv-color-primary: #667eea;
 $cv-color-secondary: #764ba2;
-
-// Couleurs de texte
 $cv-color-text: #333;
 $cv-color-text-muted: #666;
 $cv-color-text-light: #999;
 $cv-color-text-inverse: #ffffff;
-
-// Couleurs de fond
 $cv-color-background: #ffffff;
 $cv-color-sidebar-background: linear-gradient(
   135deg,
   $cv-color-primary 0%,
   $cv-color-secondary 100%
 );
-
-// Gradients
-$cv-gradient-highlight: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
-
-// Bouton print
+$cv-color-border: #e0e0e0;
 $cv-print-button: #2c3e50;
 $cv-print-button-hover: #5d7894;
 
-// Espacements (optimisés pour A4)
-$cv-spacing-xs: 3px;
-$cv-spacing-sm: 6px;
-$cv-spacing-md: 10px;
-$cv-spacing-lg: 16px;
-$cv-spacing-xl: 20px;
+// ESPACEMENTS
+$cv-spacing-xs: 2px;
+$cv-spacing-sm: 4px;
+$cv-spacing-md: 7px;
+$cv-spacing-lg: 11px;
+$cv-spacing-xl: 15px;
 
-// Tailles de police (équilibrées)
-$cv-font-xs: 10px;
-$cv-font-sm: 11px;
-$cv-font-md: 12px;
-$cv-font-base: 13px;
-$cv-font-lg: 15px;
-$cv-font-xl: 19px;
-$cv-font-xxl: 26px;
+// FONTS
+$cv-font-name: 20px;
+$cv-font-title: 13px;
+$cv-font-sub: 11px;
+$cv-font-section: 11px;
+$cv-font-base: 11px;
+$cv-font-md: 10px;
+$cv-font-sm: 9px;
+$cv-lh-base: 1.4;
+$cv-lh-compact: 1.35;
+
+// MARGES PAGE PRINT
+$cv-page-margin-top: 0.8cm;
+$cv-page-margin-right: 0.8cm;
+$cv-page-margin-bottom: 0.8cm;
+$cv-page-margin-left: 0.8cm;

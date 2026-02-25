@@ -1,0 +1,28 @@
+@use "../../../styles/cv-variables" as vars;
+
+.container {
+  text-align: center;
+  margin-bottom: vars.$cv-spacing-lg;
+  padding-bottom: vars.$cv-spacing-md;
+}
+
+.name {
+  font-size: vars.$cv-font-name;
+  font-weight: 700;
+  color: vars.$cv-color-text;
+  margin: 0 0 3px 0;
+}
+
+.title {
+  font-size: vars.$cv-font-title;
+  font-weight: 500;
+  color: vars.$cv-color-text-muted;
+  margin: 0 0 2px 0;
+}
+
+.subtitle {
+  font-size: vars.$cv-font-sub;
+  font-style: italic;
+  color: vars.$cv-color-text-muted;
+  margin: 0;
+}

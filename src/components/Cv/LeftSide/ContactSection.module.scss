@@ -1,0 +1,16 @@
+@use "../../../styles/cv-variables" as vars;
+@use "../../../styles/cv-left-mixins" as mix;
+
+.container {
+  @include mix.section-container;
+}
+.sectionTitle {
+  @include mix.section-title;
+}
+
+.item {
+  font-size: vars.$cv-font-base;
+  color: vars.$cv-color-text-inverse;
+  line-height: vars.$cv-lh-base;
+  margin: 0 0 vars.$cv-spacing-xs 0;
+}

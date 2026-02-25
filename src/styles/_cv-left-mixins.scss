@@ -1,0 +1,16 @@
+@use "cv-variables" as vars;
+
+@mixin section-title {
+  font-size: vars.$cv-font-section;
+  font-weight: 700;
+  color: vars.$cv-color-text-inverse;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 vars.$cv-spacing-sm 0;
+  padding-bottom: vars.$cv-spacing-xs;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+@mixin section-container {
+  margin-bottom: vars.$cv-spacing-xl;
+}

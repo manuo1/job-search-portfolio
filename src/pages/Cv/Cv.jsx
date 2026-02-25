@@ -1,71 +1,44 @@
-import React, { useEffect } from "react";
-import PrintButton from "../../components/Cv/PrintButton";
-import ProfilePhoto from "../../components/Cv/ProfilePhoto";
-import Languages from "../../components/Cv/Languages";
-import ContactSection from "../../components/Cv/ContactSection";
-import TechnicalSkillsSection from "../../components/Cv/TechnicalSkillsSection";
-import SoftSkillsSection from "../../components/Cv/SoftSkillsSection";
-import CvHeader from "../../components/Cv/CvHeader";
-import ProfileSection from "../../components/Cv/ProfileSection";
-import CareerTimelineSection from "../../components/Cv/CareerTimelineSection";
-import LinksSection from "../../components/Cv/LinksSection";
-
+import React, { useEffect, useCallback } from "react";
+import LeftSide from "../../components/Cv/LeftSide/LeftSide";
+import RightSide from "../../components/Cv/RightSide/RightSide";
 import styles from "./Cv.module.scss";
-import printStyles from "./CvPrint.module.scss";
 
 export default function Cv() {
   useEffect(() => {
-    const originalTitle = document.title;
+    const original = document.title;
     document.title = "CV-Emmanuel-Oudot-Developpeur-FullStack";
-
-    return () => {
-      document.title = originalTitle;
-    };
+    return () => { document.title = original; };
   }, []);
 
-  const handlePrint = () => {
-    setTimeout(() => {
-      window.print();
-    }, 100);
-  };
+  const handlePrint = useCallback(() => {
+    setTimeout(() => window.print(), 100);
+  }, []);
 
-  // Print with Ctrl+P or Cmd+P
   useEffect(() => {
-    const handleKeyDown = (event) => {
-      if ((event.ctrlKey || event.metaKey) && event.key === "p") {
-        event.preventDefault();
+    const onKey = (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key === "p") {
+        e.preventDefault();
         handlePrint();
       }
     };
-
-    document.addEventListener("keydown", handleKeyDown);
-
-    return () => {
-      document.removeEventListener("keydown", handleKeyDown);
-    };
-  }, []);
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [handlePrint]);
 
   return (
     <div className={styles.cvWrapper}>
-      <div className={styles.printButton}>
-        <PrintButton onClick={handlePrint} />
+      <div className={styles.toolbar}>
+        <button className={styles.printBtn} onClick={handlePrint}>
+          🖨️ Imprimer le CV
+        </button>
       </div>
-      <div className={`${styles.cvContainer} ${printStyles.cvContainer}`}>
-        <div className={`${styles.sidebar} ${printStyles.sidebar}`}>
-          <ProfilePhoto />
-          <ContactSection />
-          <LinksSection />
-          <Languages />
-          <TechnicalSkillsSection />
-          <SoftSkillsSection />
-        </div>
-
-        <div className={`${styles.mainContent} ${printStyles.mainContent}`}>
-          <CvHeader />
-          <ProfileSection />
-          <CareerTimelineSection />
-          <div className={printStyles.atsKeywords}></div>
-        </div>
+      <div className={styles.cvContainer}>
+        <aside className={styles.leftSide}>
+          <LeftSide />
+        </aside>
+        <main className={styles.rightSide}>
+          <RightSide />
+        </main>
       </div>
     </div>
   );

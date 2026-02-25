@@ -1,0 +1,95 @@
+@use "../../../styles/cv-variables" as vars;
+
+.container {
+  padding: 0;
+}
+
+.sectionTitle {
+  font-size: vars.$cv-font-section;
+  font-weight: 700;
+  color: vars.$cv-color-primary;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin: 0 0 vars.$cv-spacing-sm 0;
+  padding-bottom: vars.$cv-spacing-xs;
+  border-bottom: 2px solid vars.$cv-color-primary;
+}
+
+.item {
+  padding: vars.$cv-spacing-md 0;
+  border-bottom: 1px solid vars.$cv-color-border;
+  &.last {
+    border-bottom: none;
+  }
+}
+
+.itemHeader {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 3px;
+  margin-bottom: 2px;
+}
+
+.itemTitle {
+  font-weight: 600;
+  font-size: vars.$cv-font-md;
+  color: vars.$cv-color-text;
+}
+
+.itemCompany {
+  font-size: vars.$cv-font-md;
+  color: vars.$cv-color-primary;
+  font-weight: 500;
+}
+
+.itemDate {
+  font-size: vars.$cv-font-sm;
+  color: vars.$cv-color-text-muted;
+  font-style: italic;
+  margin: 0 0 vars.$cv-spacing-xs 0;
+  padding-left: vars.$cv-spacing-xs;
+}
+
+.itemDesc {
+  list-style: none;
+  margin: vars.$cv-spacing-xs 0 0 0;
+  padding: 0 0 0 vars.$cv-spacing-lg;
+
+  li {
+    font-size: vars.$cv-font-base;
+    color: vars.$cv-color-text-muted;
+    line-height: vars.$cv-lh-compact;
+    margin-bottom: vars.$cv-spacing-xs;
+    position: relative;
+
+    &::before {
+      content: "–";
+      position: absolute;
+      left: calc(-1 * vars.$cv-spacing-lg);
+      color: vars.$cv-color-text-light;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.footer {
+  margin-top: vars.$cv-spacing-md;
+  padding-top: vars.$cv-spacing-sm;
+  border-top: 1px solid vars.$cv-color-border;
+  font-size: vars.$cv-font-sm;
+  color: vars.$cv-color-text-muted;
+  text-align: center;
+
+  a {
+    color: vars.$cv-color-primary;
+    text-decoration: none;
+    font-weight: 500;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

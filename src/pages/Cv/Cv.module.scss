@@ -1,51 +1,119 @@
 @use "../../styles/cv-variables" as vars;
 
+$a4-content-height: 28.1cm;
+$a4-content-width: 19.4cm;
+$sidebar-ratio: 35%;
+
 .cvWrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  background: #f0f2f5;
   min-height: 100vh;
-}
-
-.cvContainer {
-  max-width: 21cm;
-  min-height: 29.7cm; // min-height au lieu de height !
-  margin: 20px auto;
-  background: vars.$cv-color-background;
-  display: flex;
-  overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 
   @media print {
-    margin: 0 !important;
-    min-height: auto !important;
-    box-shadow: none !important;
+    display: block;
+    padding: 0;
+    margin: 0;
+    background: white;
+    min-height: 0;
   }
 }
 
-.sidebar {
-  width: 35%;
-  background: vars.$cv-color-sidebar-background;
-  color: vars.$cv-color-text-inverse;
-  padding: 30px 25px;
-
-  @media print {
-    padding: 20px 15px !important;
-  }
-}
-
-.mainContent {
-  width: 65%;
-  padding: 25px 30px;
-
-  @media print {
-    padding: 20px 20px 20px 25px !important;
-  }
-}
-
-.printButton {
-  margin: 10px auto;
+.toolbar {
+  margin-bottom: 12px;
 
   @media print {
     display: none !important;
+  }
+}
+
+.printBtn {
+  background: vars.$cv-print-button;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.4rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  &:hover {
+    background: vars.$cv-print-button-hover;
+  }
+}
+
+.cvContainer {
+  display: flex;
+  width: $a4-content-width;
+  height: $a4-content-height;
+  overflow: hidden;
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+    to right,
+    #667eea 0%,
+    #764ba2 $sidebar-ratio,
+    vars.$cv-color-background $sidebar-ratio,
+    vars.$cv-color-background 100%
+  );
+
+  @media print {
+    width: $a4-content-width;
+    height: $a4-content-height;
+    box-shadow: none;
+  }
+}
+
+.leftSide {
+  width: $sidebar-ratio;
+  flex-shrink: 0;
+  color: vars.$cv-color-text-inverse;
+  padding: 20px 14px;
+  background: transparent;
+  overflow: hidden;
+}
+
+.rightSide {
+  flex: 1;
+  padding: 18px 20px 18px 22px;
+  min-width: 0;
+  background: vars.$cv-color-background;
+  overflow: hidden;
+}
+
+@media print {
+  :global(body > div > header),
+  :global(#root > header),
+  :global(#root > div > header),
+  :global(.app-header),
+  :global(nav),
+  :global(footer) {
+    display: none !important;
+  }
+
+  :global(html),
+  :global(body) {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white !important;
+    height: auto !important;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: vars.$cv-page-margin-top vars.$cv-page-margin-right
+      vars.$cv-page-margin-bottom vars.$cv-page-margin-left;
+  }
+
+  :global(*) {
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  :global(a) {
+    color: inherit !important;
+    text-decoration: none !important;
   }
 }
