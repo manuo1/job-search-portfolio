@@ -1,7 +1,7 @@
 @use "../../styles/cv-variables" as vars;
 
 $a4-content-height: 28.1cm;
-$a4-content-width:  19.4cm;
+$a4-content-width: 19.4cm;
 
 .cvWrapper {
   display: flex;
@@ -39,15 +39,17 @@ $a4-content-width:  19.4cm;
   cursor: pointer;
   letter-spacing: 0.03em;
 
-  &:hover { background: vars.$cv-print-button-hover; }
+  &:hover {
+    background: vars.$cv-print-button-hover;
+  }
 }
 
 .cvContainer {
   display: flex;
   flex-direction: column;
   width: $a4-content-width;
-  height: $a4-content-height;
-  overflow: hidden;
+  min-height: $a4-content-height;
+  overflow: visible;
   background: vars.$cv-color-background;
   box-shadow: 0 4px 32px rgba(0, 0, 0, 0.13);
 
@@ -61,7 +63,6 @@ $a4-content-width:  19.4cm;
 .cvBody {
   flex: 1;
   padding: 12px 18px;
-  overflow: hidden;
 }
 
 @media print {
