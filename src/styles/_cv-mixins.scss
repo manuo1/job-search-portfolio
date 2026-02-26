@@ -3,12 +3,12 @@
 @mixin section-title {
   font-size: vars.$cv-font-section;
   font-weight: 700;
-  color: vars.$cv-color-text-inverse;
+  color: vars.$cv-color-primary;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   margin: 0 0 vars.$cv-spacing-sm 0;
   padding-bottom: vars.$cv-spacing-xs;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  border-bottom: 1.5px solid vars.$cv-color-primary;
 }
 
 @mixin section-container {

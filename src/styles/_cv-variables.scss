@@ -1,36 +1,31 @@
 // COULEURS
-$cv-color-primary: #667eea;
-$cv-color-secondary: #764ba2;
-$cv-color-text: #333;
-$cv-color-text-muted: #666;
-$cv-color-text-light: #999;
-$cv-color-text-inverse: #ffffff;
+$cv-color-primary: #2d4a6b;
+$cv-color-accent: #4a7fa5;
+$cv-color-text: #1a1a1a;
+$cv-color-text-muted: #555;
+$cv-color-text-light: #888;
 $cv-color-background: #ffffff;
-$cv-color-sidebar-background: linear-gradient(
-  135deg,
-  $cv-color-primary 0%,
-  $cv-color-secondary 100%
-);
-$cv-color-border: #e0e0e0;
-$cv-print-button: #2c3e50;
-$cv-print-button-hover: #5d7894;
+$cv-color-border: #dde3ea;
+$cv-color-border-light: #eef1f4;
+$cv-print-button: #2d4a6b;
+$cv-print-button-hover: #4a7fa5;
 
 // ESPACEMENTS
 $cv-spacing-xs: 2px;
 $cv-spacing-sm: 4px;
 $cv-spacing-md: 7px;
 $cv-spacing-lg: 11px;
-$cv-spacing-xl: 15px;
+$cv-spacing-xl: 16px;
+$cv-spacing-2xl: 22px;
 
 // FONTS
-$cv-font-name: 20px;
-$cv-font-title: 13px;
-$cv-font-sub: 11px;
-$cv-font-section: 11px;
-$cv-font-base: 11px;
-$cv-font-md: 10px;
+$cv-font-name: 22px;
+$cv-font-title: 12px;
+$cv-font-section: 10px;
+$cv-font-base: 10px;
+$cv-font-md: 9.5px;
 $cv-font-sm: 9px;
-$cv-lh-base: 1.4;
+$cv-lh-base: 1.45;
 $cv-lh-compact: 1.35;
 
 // MARGES PAGE PRINT

@@ -1,0 +1,36 @@
+@use "../../styles/cv-variables" as vars;
+@use "../../styles/cv-mixins" as mix;
+
+.container {
+  @include mix.section-container;
+}
+.sectionTitle {
+  @include mix.section-title;
+}
+
+.category {
+  margin-bottom: vars.$cv-spacing-xs;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 4px;
+}
+
+.categoryTitle {
+  font-size: vars.$cv-font-base;
+  font-weight: 700;
+  color: vars.$cv-color-primary;
+  margin: 0;
+  flex-shrink: 0;
+
+  &::after {
+    content: " :";
+  }
+}
+
+.items {
+  font-size: vars.$cv-font-md;
+  color: vars.$cv-color-text-muted;
+  line-height: vars.$cv-lh-compact;
+  margin: 0;
+}

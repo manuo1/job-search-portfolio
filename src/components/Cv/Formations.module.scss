@@ -1,0 +1,60 @@
+@use "../../styles/cv-variables" as vars;
+@use "../../styles/cv-mixins" as mix;
+
+.container {
+  @include mix.section-container;
+}
+
+.sectionTitle {
+  @include mix.section-title;
+}
+
+.item {
+  display: flex;
+  gap: vars.$cv-spacing-lg;
+  padding: vars.$cv-spacing-sm 0;
+  border-bottom: 1px solid vars.$cv-color-border-light;
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.date {
+  font-size: vars.$cv-font-sm;
+  color: vars.$cv-color-text-light;
+  font-style: italic;
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding-top: 1px;
+  min-width: 90px;
+}
+
+.content {
+  flex: 1;
+  font-size: vars.$cv-font-base;
+  color: vars.$cv-color-text-muted;
+  line-height: vars.$cv-lh-compact;
+}
+
+.school {
+  font-weight: 700;
+  color: vars.$cv-color-text;
+}
+
+.footer {
+  margin-top: vars.$cv-spacing-md;
+  padding-top: vars.$cv-spacing-sm;
+  border-top: 1px solid vars.$cv-color-border-light;
+  font-size: vars.$cv-font-sm;
+  color: vars.$cv-color-text-light;
+  text-align: center;
+
+  a {
+    color: vars.$cv-color-accent;
+    text-decoration: none;
+    font-weight: 500;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@use "../../styles/cv-variables" as vars;
+@use "../../styles/cv-mixins" as mix;
+
+.container {
+  margin-top: vars.$cv-spacing-md;
+  padding-top: vars.$cv-spacing-md;
+}
+
+.sectionTitle {
+  @include mix.section-title;
+}
+
+.langRow {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-bottom: vars.$cv-spacing-xs;
+}
+
+.langName {
+  font-size: vars.$cv-font-base;
+  font-weight: 700;
+  color: vars.$cv-color-text;
+  flex-shrink: 0;
+}
+
+.langSep {
+  color: vars.$cv-color-text-light;
+  font-size: vars.$cv-font-base;
+}
+
+.langLevel {
+  font-size: vars.$cv-font-md;
+  color: vars.$cv-color-text-muted;
+  line-height: vars.$cv-lh-compact;
+}

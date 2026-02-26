@@ -1,0 +1,20 @@
+@use "../../styles/cv-variables" as vars;
+@use "../../styles/cv-mixins" as mix;
+
+.container { @include mix.section-container; }
+
+.sectionTitle { @include mix.section-title; }
+
+.text {
+  font-size: vars.$cv-font-base;
+  line-height: vars.$cv-lh-base;
+  color: vars.$cv-color-text-muted;
+  text-align: justify;
+  margin: 0 0 vars.$cv-spacing-sm 0;
+  &:last-child { margin-bottom: 0; }
+}
+
+.highlight {
+  color: vars.$cv-color-primary;
+  font-weight: 600;
+}

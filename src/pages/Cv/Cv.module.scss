@@ -1,15 +1,14 @@
 @use "../../styles/cv-variables" as vars;
 
 $a4-content-height: 28.1cm;
-$a4-content-width: 19.4cm;
-$sidebar-ratio: 35%;
+$a4-content-width:  19.4cm;
 
 .cvWrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px 0;
-  background: #f0f2f5;
+  background: #eef1f4;
   min-height: 100vh;
 
   @media print {
@@ -33,30 +32,24 @@ $sidebar-ratio: 35%;
   background: vars.$cv-print-button;
   color: white;
   border: none;
-  border-radius: 6px;
-  padding: 0.4rem 1rem;
-  font-size: 0.85rem;
+  border-radius: 4px;
+  padding: 0.4rem 1.1rem;
+  font-size: 0.82rem;
   font-weight: 600;
   cursor: pointer;
+  letter-spacing: 0.03em;
 
-  &:hover {
-    background: vars.$cv-print-button-hover;
-  }
+  &:hover { background: vars.$cv-print-button-hover; }
 }
 
 .cvContainer {
   display: flex;
+  flex-direction: column;
   width: $a4-content-width;
   height: $a4-content-height;
   overflow: hidden;
-  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(
-    to right,
-    #667eea 0%,
-    #764ba2 $sidebar-ratio,
-    vars.$cv-color-background $sidebar-ratio,
-    vars.$cv-color-background 100%
-  );
+  background: vars.$cv-color-background;
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.13);
 
   @media print {
     width: $a4-content-width;
@@ -65,20 +58,9 @@ $sidebar-ratio: 35%;
   }
 }
 
-.leftSide {
-  width: $sidebar-ratio;
-  flex-shrink: 0;
-  color: vars.$cv-color-text-inverse;
-  padding: 20px 14px;
-  background: transparent;
-  overflow: hidden;
-}
-
-.rightSide {
+.cvBody {
   flex: 1;
-  padding: 18px 20px 18px 22px;
-  min-width: 0;
-  background: vars.$cv-color-background;
+  padding: 12px 18px;
   overflow: hidden;
 }
 

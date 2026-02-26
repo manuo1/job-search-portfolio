@@ -1,13 +1,19 @@
 import React, { useEffect, useCallback } from "react";
-import LeftSide from "../../components/Cv/LeftSide/LeftSide";
-import RightSide from "../../components/Cv/RightSide/RightSide";
+import CvHeader from "../../components/Cv/CvHeader";
+import ProfileSection from "../../components/Cv/ProfileSection";
+import TechnicalSkills from "../../components/Cv/TechnicalSkills";
+import CareerTimeline from "../../components/Cv/CareerTimeline";
+import Formations from "../../components/Cv/Formations";
+import Languages from "../../components/Cv/Languages";
 import styles from "./Cv.module.scss";
 
 export default function Cv() {
   useEffect(() => {
     const original = document.title;
     document.title = "CV-Emmanuel-Oudot-Developpeur-FullStack";
-    return () => { document.title = original; };
+    return () => {
+      document.title = original;
+    };
   }, []);
 
   const handlePrint = useCallback(() => {
@@ -33,12 +39,14 @@ export default function Cv() {
         </button>
       </div>
       <div className={styles.cvContainer}>
-        <aside className={styles.leftSide}>
-          <LeftSide />
-        </aside>
-        <main className={styles.rightSide}>
-          <RightSide />
-        </main>
+        <CvHeader />
+        <div className={styles.cvBody}>
+          <ProfileSection />
+          <TechnicalSkills />
+          <CareerTimeline />
+          <Formations />
+          <Languages />
+        </div>
       </div>
     </div>
   );
